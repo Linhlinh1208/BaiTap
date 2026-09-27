@@ -1,20 +1,11 @@
 import React from 'react';
-import { ProductList } from './features/products/ProductList';
-import { CartView } from './features/cart/CartView';
+import { FavoritesView } from './features/favorites/FavoritesView';
 
 export const App: React.FC = () => {
   return (
-    <div style={{ maxWidth: '1080px', margin: '0 auto', padding: '24px', fontFamily: 'sans-serif' }}>
-      <h1>Cửa Hàng Trực Tuyến</h1>
-      <div style={{ display: 'flex', gap: '32px', alignItems: 'flex-start' }}>
-        <div style={{ flex: 2 }}>
-          <h2>Danh Sách Sản Phẩm</h2>
-          <ProductList />
-        </div>
-        <div style={{ flex: 1, position: 'sticky', top: '24px' }}>
-          <CartView />
-        </div>
-      </div>
+    <div style={{ maxWidth: '800px', margin: '0 auto' }}>
+      <h1>LTWNC - Bài Tập 4: Quản Lý Sản Phẩm Yêu Thích (Zustand)</h1>
+      <FavoritesView />
     </div>
   );
 };
